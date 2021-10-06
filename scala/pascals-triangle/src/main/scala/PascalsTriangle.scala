@@ -18,7 +18,7 @@ object PascalsTriangle {
 
   def rows(n: Int): List[List[Int]] = n match {
     case n if n <= 0 => List()
-    case 1 => List(List(1))
-    case _ => List(List(1)) ++ generate(n - 1, List(), List())
+    case 1           => List(List(1))
+    case _           => List(List(1)) ++ generate(n - 1, List(), List())
   }
 }
