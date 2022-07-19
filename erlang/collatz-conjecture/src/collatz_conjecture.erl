@@ -2,7 +2,6 @@
 
 -export([steps/1]).
 
-
 steps(N) when N =< 0 -> error(badarg);
 steps(N) -> step(N, 0).
 
